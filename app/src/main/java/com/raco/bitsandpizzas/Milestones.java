@@ -10,4 +10,5 @@ public class Milestones {
     // Test the swipe behaviour of the application.
     // Add tab navigation to MainActivity.
     // Test add tab navigation to MainActivity.
+    // Enable MainActivity’s toolbar to scroll.
 }
