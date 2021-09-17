@@ -8,4 +8,5 @@ public class Milestones {
     // Test adding a share action provider to the toolbar.
     // Add Swipe Navigation to the app
     // Test the swipe behaviour of the application.
+    // Add tab navigation to MainActivity.
 }
