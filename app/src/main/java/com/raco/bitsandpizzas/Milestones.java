@@ -6,4 +6,5 @@ public class Milestones {
     // Test adding a toolbar to the application.
     // Test adding an action to the toolbar
     // Test adding a share action provider to the toolbar.
+    // Add Swipe Navigation to the app
 }
