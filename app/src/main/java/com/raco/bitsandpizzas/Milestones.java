@@ -16,7 +16,7 @@ public class Milestones {
     // Test succesully the process to add a collapsing toolbar to OrderActivity
     //     (Create Order)
     // Start the process to add an image to a collapsing toolbar.
-
+    // Test succesfully the process to add an image to a collapsing toolbar.
 
 
 }
