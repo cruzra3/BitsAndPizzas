@@ -12,4 +12,5 @@ public class Milestones {
     // Test add tab navigation to MainActivity.
     // Enable MainActivity’s toolbar to scroll.
     // Test succesfully that MainActivity’s toolbar scrolls.
+    // Start the process to add a collapsing toolbar to OrderActivity.
 }
