@@ -11,5 +11,5 @@ public class Milestones {
     // Add tab navigation to MainActivity.
     // Test add tab navigation to MainActivity.
     // Enable MainActivity’s toolbar to scroll.
-
+    // Test succesfully that MainActivity’s toolbar scrolls.
 }
