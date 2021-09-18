@@ -17,6 +17,6 @@ public class Milestones {
     //     (Create Order)
     // Start the process to add an image to a collapsing toolbar.
     // Test succesfully the process to add an image to a collapsing toolbar.
-
+    // Start the process to add a FAB and snackbar to OrderActivity.
 
 }
