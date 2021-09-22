@@ -1,6 +1,8 @@
 package com.raco.bitsandpizzas;
 
+import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -39,8 +41,8 @@ public class CaptionedImagesAdapter extends
 
     @NonNull
     @Override
-    public CaptionedImagesAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent,
-                                                                int viewType) {
+    public CaptionedImagesAdapter.ViewHolder onCreateViewHolder(
+            @NonNull ViewGroup parent, int viewType) {
         CardView cv = (CardView) LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.card_captioned_image, parent, false);
         return new ViewHolder(cv);
