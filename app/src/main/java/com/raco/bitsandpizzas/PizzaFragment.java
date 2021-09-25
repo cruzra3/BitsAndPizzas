@@ -1,5 +1,6 @@
 package com.raco.bitsandpizzas;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-
 
 public class PizzaFragment extends Fragment {
 
@@ -40,6 +40,15 @@ public class PizzaFragment extends Fragment {
 
         GridLayoutManager layoutManager = new GridLayoutManager(getActivity(), 2);
         pizzaRecycler.setLayoutManager(layoutManager);
+
+        adapter.setListener(new CaptionedImagesAdapter.Listener() {
+            @Override
+            public void onClick(int position) {
+                Intent intent = new Intent(getActivity(), PizzaDetailActivity.class);
+                intent.putExtra(PizzaDetailActivity.EXTRA_PIZZA_ID, position);
+                getActivity().startActivity(intent);
+            }
+        });
 
         return pizzaRecycler;
     }

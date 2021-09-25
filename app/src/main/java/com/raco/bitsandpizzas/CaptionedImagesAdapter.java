@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -18,6 +19,12 @@ public class CaptionedImagesAdapter extends
 
     private String[] captions;
     private int[] imageIds;
+
+    private Listener listener;
+
+    interface Listener {
+        void onClick(int position);
+    }
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -39,6 +46,10 @@ public class CaptionedImagesAdapter extends
         return captions.length;
     }
 
+    public void setListener(Listener listener){
+        this.listener = listener;
+    }
+
     @NonNull
     @Override
     public CaptionedImagesAdapter.ViewHolder onCreateViewHolder(
@@ -51,6 +62,7 @@ public class CaptionedImagesAdapter extends
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder,
                                  int position) {
+        position = holder.getAdapterPosition();
         CardView cardView = holder.cardView;
         ImageView imageView = (ImageView)cardView.findViewById(R.id.info_image);
         Drawable drawable =
@@ -59,5 +71,15 @@ public class CaptionedImagesAdapter extends
         imageView.setContentDescription(captions[position]);
         TextView textView = (TextView) cardView.findViewById(R.id.info_text);
         textView.setText(captions[position]);
+
+        int finalPosition = position;
+        cardView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(listener != null){
+                    listener.onClick(finalPosition);
+                }
+            }
+        });
     }
 }

@@ -20,5 +20,5 @@ public class Milestones {
     // Start the process to add a FAB and snackbar to OrderActivity.
     // Test succesfully the process to add a FAB and snackbar to OrderActivity.
     // Start process to add recycler view to app.
-
+    // Test succesfully process to add recycler view to app.
 }
