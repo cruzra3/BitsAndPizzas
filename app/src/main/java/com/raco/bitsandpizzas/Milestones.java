@@ -21,4 +21,5 @@ public class Milestones {
     // Test succesfully the process to add a FAB and snackbar to OrderActivity.
     // Start process to add recycler view to app.
     // Test succesfully process to add recycler view to app.
+    // Start adding pasta logic for recycler view.
 }
