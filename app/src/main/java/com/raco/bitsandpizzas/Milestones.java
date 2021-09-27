@@ -23,4 +23,5 @@ public class Milestones {
     // Test succesfully process to add recycler view to app.
     // Start adding pasta logic for recycler view.
     // Test succesfully process to add pasta logic for recycler view.
+    // Start adding stores logic for recycler view.
 }
